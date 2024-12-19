@@ -1,8 +1,17 @@
 <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
   <fieldset>
-    <legend>Insert</legend>
-    INSERT INTO artist VALUES ( <input type="text" name="artist-id" placeholder="artist_id" required>, <input type="text" name="artist-name" placeholder="artist_name" required> );
-    <input type="hidden" name="submitted" value="3">
-    <p><input type="submit" value="insert"></p>
+      <legend>Insert Account</legend>
+      <input type="text" name="app_name" placeholder="App Name" required>
+      <input type="url" name="url" placeholder="URL (optional)">
+      <textarea name="comment" placeholder="Comment (optional)"></textarea><br>
+      <input type="text" name="first_name" placeholder="First Name" required>
+      <input type="text" name="last_name" placeholder="Last Name" required>
+      <input type="text" name="email" placeholder="Email" required><br>
+      <br>
+      <input type="text" name="username" placeholder="Username" required>
+      <input type="password" name="password" placeholder="Password" required>
+      <br>
+      <input type="hidden" name="submitted" value="INSERT_ACCOUNT"><br>
+      <input type="submit" value="Insert">
   </fieldset>
 </form>
